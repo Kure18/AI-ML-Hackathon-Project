@@ -1,0 +1,26 @@
+[project]
+name = "ml-hackathon-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Solomon Maidawa Kure", email = "42439912+Kure18@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "kfold>=1.0.0b1",
+    "lightgbm>=4.7.0",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.3",
+    "optuna>=5.0.0",
+    "pandas>=3.0.6",
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
+]
+
+[project.scripts]
+ml-hackathon-project = "ml_hackathon_project:main"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"
